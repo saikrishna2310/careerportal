@@ -1,0 +1,24 @@
+{
+  "name": "careerconnect-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/web",
+    "apps/mobile",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace @careerconnect/web",
+    "dev:mobile": "npm run start --workspace @careerconnect/mobile",
+    "build:web": "npm run build --workspace @careerconnect/web",
+    "typecheck:web": "npm run typecheck --workspace @careerconnect/web",
+    "typecheck:mobile": "npm run typecheck --workspace @careerconnect/mobile",
+    "check:structure": "node scripts/check-project.mjs",
+    "typecheck:shared": "npm run typecheck --workspace @careerconnect/shared",
+    "typecheck": "npm run typecheck:web && npm run typecheck:mobile && npm run typecheck:shared",
+    "check": "npm run check:structure && npm run typecheck && npm run build:web"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

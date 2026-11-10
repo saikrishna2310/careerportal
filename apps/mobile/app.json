@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "CareerConnect",
+    "slug": "careerconnect",
+    "scheme": "careerconnect",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.careerconnect.app"
+    },
+    "android": {
+      "package": "com.careerconnect.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#4169E1"
+      }
+    }
+  }
+}
